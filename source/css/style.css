@@ -15,7 +15,7 @@
 }
 
 .main-container {
-    background-color: var(--background-color);
+    background: linear-gradient(180deg, rgba(247, 239, 199, 0.662) 4%, rgba(204, 120, 36, 0.375) 100%);
     min-height: 100vh;
 }
 
