@@ -37,7 +37,6 @@ function createCard(data) {
     return card;
 }
 
-// rendering the cards 
 function renderCards() {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
@@ -48,19 +47,16 @@ function renderCards() {
     });
 }
 
-//  sorting cards alphabetically
 function sortCardsAlphabetically() {
     cardsData.sort((a, b) => a.title.localeCompare(b.title));
     renderCards();
 }
 
-// shuffling cards 
 function shuffleCards() {
     cardsData.sort(() => Math.random() - 0.5);
     renderCards();
 }
 
-// initial render of cards
 document.addEventListener("DOMContentLoaded", () => {
     renderCards();
 
