@@ -36,7 +36,7 @@
     color: var(--secondary-color);
 }
 
-h3 {
+.card-title {
     margin: 20px 0 0 20px;
 }
 
@@ -53,11 +53,12 @@ h3 {
 
 .card-description {
     padding: 10px;
+    font-size: 14px;
 }
 
 .image-container {
     background-image: url(./source/images/new-york.jpg);
-    height: 240px;
+    height: 200px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +106,7 @@ h3 {
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
     height: auto;
-    max-height: 295px;
+    max-height: 250px;
     overflow: hidden;
     width: 40%;
     margin: 10px;
@@ -125,21 +126,40 @@ h3 {
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
 }
+
 @media only screen and (min-width: 768px) {
     .title {
         font-size: 65px;
         font-weight: 600;
         padding: 40px 0;
     }
- .cards-container{
+
+    .cards-container {
         gap: 25px;
+        max-width: 85%;
+        margin: auto;
     }
-    .card{
-        width: 300px;
+
+    .card {
+        width: 270px;
         max-height: 295px;
     }
+
     .card-description {
         padding: 20px;
+        font-size: 16px;
     }
-   
+
+    .image-container {
+        height: 240px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .cards-container {
+        max-width: 1300px;
+        width: 90%;
+        margin: auto;
+    }
 }

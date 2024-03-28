@@ -15,6 +15,7 @@ function createCard(data) {
     card.classList.add("card");
 
     const title = document.createElement("h3");
+    title.classList.add("card-title");
     title.textContent = data.title;
 
     const imageContainer = document.createElement("div");
@@ -35,7 +36,6 @@ function createCard(data) {
 
     return card;
 }
-
 
 // rendering the cards 
 function renderCards() {
